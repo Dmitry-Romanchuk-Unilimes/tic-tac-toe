@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "description": "JavaScript and TypeScript example starter project",
   "main": "index.html",
+  "homepage": "http://Dmitry-Romanchuk-Unilimes.github.io/tic-tac-toe",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@types/jest": "26.0.15"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "parcel-bundler": "^1.6.1",
     "typescript": "^4.4.2"
   },
